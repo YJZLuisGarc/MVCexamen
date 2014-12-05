@@ -7,7 +7,8 @@ private $name;
         echo'<form action="./controllers/examen.php">';
             echo'<table class="table table-striped">';
             echo'<tr><td colspan="3">Test</td></tr>';
-         $sql = "SELECT * FROM test ORDER BY RAND() LIMIT 0,10;";
+         ////echo'<input type="text" name="accion" value="">';
+        $sql = "SELECT * FROM test ORDER BY RAND() LIMIT 0,10;";
         $query = mysql_query($sql)OR DIE ("Error en consulta".mysql_error());
         $cont = 0;
         for ($x=1; $x<11; $x++){
@@ -43,10 +44,10 @@ private $name;
     }
     public function muestraCalif($id){
         echo"<div class='alert alert-success'>";
-        $sqlz='Select * from testdetalle Where id=2';
+        $sqlz='Select * from testdetalle Where id="$id"';
         $queryz = mysql_query($sqlz)or die("Error de consulta 2".mysql_error());
         $result =mysql_result($queryz,0,'calif');
-            echo" Tu calificacion es $result";
+            echo" Tu calificacion es$result";
         echo"</div>";
     }
 }

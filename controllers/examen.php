@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Rogelio
+ * Date: 13/10/14
+ * Time: 02:01 PM
+ */
 ////controlador
 ///error_reporting(0);
 if(isset($_REQUEST['enviar'])){
