@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rogelio
- * Date: 27/10/14
- * Time: 08:21 PM
- */
 $db_name = "sistemae";
 $db_server = "localhost";
 $db_user ="root";
